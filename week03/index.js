@@ -102,3 +102,64 @@ const profile = ["Carl", 5, false, {color: "Green"}];
 
 console.log("\nArray");
 console.log(profile);
+
+for (let i = 0; i < profile.length; i++) {
+    console.log(profile[i]);
+}
+
+console.log('\nUsing forEach');
+profile.forEach((item) => {
+    console.log(item);
+});
+
+// Accessing the value of color
+console.log(profile[profile.length - 1].color);
+
+
+// This keyword
+console.log('\nThis Keyword');
+
+
+const person2 = {
+    name: 'Tim Berners-Lee',
+    age: 66,
+    gender: 'male',
+    interests: ['physics', 'web'],
+    greeting: function() {
+        console.log("Hello " + this.name);
+    },
+
+    
+}
+
+person2.greeting()
+
+// Equality operators
+console.log()
+console.log('Equality operators');
+
+console.log(0 == false); // true
+console.log(0 === false); // false
+
+console.log(1 == "1"); // true
+console.log(1 === "1"); // false
+
+console.log(null == undefined); // true
+console.log(null === undefined); // false
+
+// Other methods
+console.log();
+console.log('OTHER METHODS');
+let str;
+str = "The quick brown fox jumps over the lazy dog";
+console.log(str);
+
+console.log(str.length);
+var words = str.split(" ");
+
+words.forEach(getWords);
+function getWords(item, index, arr) {
+    // console.log(item);
+    console.log(arr[index]);
+
+}
