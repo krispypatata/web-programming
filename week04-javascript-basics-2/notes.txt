@@ -1,0 +1,15 @@
+Package Manager
+- a package manager is a system that will manage your project dependencies. It will seamlessly handle installing and uninstalling packages.
+
+Node Package Manager (NPM)
+- managing dependency packages for your NodeJS application
+
+
+npm init
+- initialize npm package.json
+
+
+CommonJs
+- uses keywords require and exports
+- there is a global variable module that contains information such as the path, exports, filename, etc.
+- to EXPORT something, we use of the exports property in module.
