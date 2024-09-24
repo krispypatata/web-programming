@@ -3,6 +3,18 @@ import express from 'express';
 // Instantiate the server
 const app = express();
 
+// ---------------------------------------------------------------------------------
+// Page 9/10 of lab handout - week 05 (Servers with ExpressJS)
+// The server needs a parser in order to read the body of incoming requests; hence, these two lines
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+app.post('/submit-data', (req, res) => {
+    res.send('Server.js: Received a POST request from ' + req.body.name);
+});
+// ---------------------------------------------------------------------------------
+
+
 // This tells our app to listen for GET messages on the '/' path
 // The callback function specifies what the answer will do when a message is received
 app.get('/', (req, res) => {
@@ -18,6 +30,10 @@ app.listen(3000, () => {
     console.log('Server started at port 3000.')
 });
 
-app.post('/submit-data', (req, res) => {
-    res.send('Received a POST request');
+// app.post('/submit-data', (req, res) => {
+//     res.send('Received a POST request');
+// });
+
+app.get('/greeting', (req, res) => {
+    res.send('Hello ' + req.query.name);
 });
