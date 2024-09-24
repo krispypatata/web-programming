@@ -1,0 +1,1 @@
+[Week 05 Lab Handout - Servers with Express JS](https://docs.google.com/document/d/1pMDIOqz31yg6TLrJ4vsQn61xmMmRWrlk22NpsUVpBxQ/edit#heading=h.gjdgxs)
