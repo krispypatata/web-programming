@@ -8,13 +8,11 @@ function App() {
     const { handleSubmit, cartTotal, cart } = useCart();
 
     // Initialize React state hook for inputValue
-    const [inputValue, setinputValue] = useState("");
+    const [inputValue, setInputValue] = useState("");
 
     const addItemToCart = () => {
         // Handle adding an item to the shopping cart
         handleSubmit(inputValue);
-
-        
     };
 
     return (
@@ -31,7 +29,7 @@ function App() {
                 // Define value for input
                 value={inputValue}
                 // Create an onChange event handler
-                onChange={(e) => setinputValue(e.target.value)}
+                onChange={(e) => setInputValue(e.target.value)}
             />
             
             <div>
